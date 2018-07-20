@@ -57,3 +57,18 @@ Error: Image building with exit status 1
 The command '/bin/sh -c bin/gu rebuild-images polyglot' returned a non-zero code: 1
 
 ```
+
+Right after the crash:
+
+```text
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          15979        8129        6746         569        1102        6950
+Swap:          2047        1861         186
+```
+
+Build command:
+
+```bash
+docker build -t graal-installation https://github.com/mikaelhg/nobody-has-tested-basic-graal-installation.git
+```
